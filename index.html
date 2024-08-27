@@ -11,17 +11,25 @@
         @import "system-fonts-stack";
         body {
             font-family: var(--system-ui);
-            font-synthesis: style weight;
+            font-optical-sizing: auto;
+            font-variant-ligatures: common-ligatures discretionary-ligatures historical-ligatures;
+            font-feature-settings: "liga", "dlig", "hlig";
+            font-kerning: normal;
+            font-variant-numeric: oldstyle-nums proportional-nums;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-wrap: break-word;
             color: var(--text-primary);
             background: var(--background);
             line-height: var(--spacing-08);
-            max-width: 50rem;
             margin: 0 auto;
-            padding: 20px;
+            padding: 3rem;
         }
-        h1 { font-size: 24px; margin-bottom: 20px; }
-        h2 { font-size: 18px; margin-top: 30px; margin-bottom: 10px; }
-        code { font-family: var(--monospace-code);}
+        h1 { font-size: 24px; margin-bottom: var(--spacing-03); }
+        h2 { font-family: var(--monospace-code); font-size: 18px; margin-top: 30px; margin-bottom: 10px; font-weight: 400; }
+        ol {padding: var(--spacing-00);}
+        code { font-family: var(--monospace-code); color: var(--pink5);}
         .spacer { margin-bottom: var(--spacing-03); }
         .weight { color: var(--text-secondary-alt); font-size: 14px; }
         .one-hundred {font-weight: 100;}
@@ -38,472 +46,474 @@
 <body>
 <main>
     <h1>System Fonts Stack</h1>
-    <p>Install: <code>npm i -D system-fonts-stack</code></p>
-
-    <p>Usage: <code>@import "system-fonts-stack";</code></p>
+    <p>Lightning-fast fonts. No downloads, no delays.</p>
+    <ol>
+    <li><code>npm i -D system-fonts-stack</code></li>
+    <li><code>@import "system-fonts-stack";</code></li>
+    </ol>
 
     <section>
-    <h2 class="sfs-system-ui seven-hundred">System UI</h2>
-        <div class="sfs -system-ui spacer one-hundred">
-            <span class="nu-u-text--secondary-alt">100</span> The quick brown fox jumps over the lazy dog
+    <h2>.sfs-system-ui</h2>
+        <div class="sfs-system-ui spacer one-hundred">
+            <span class="nu-u-text--secondary-alt">100</span> The quick brown fox jumps over the lazy dog.
         </div>
         <div class="sfs-system-ui spacer two-hundred">
-            <span class="nu-u-text--secondary-alt">200</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">200</span> The quick brown fox jumps over the lazy dog. 
         </div>
         <div class="sfs-system-ui spacer three-hundred">
-            <span class="nu-u-text--secondary-alt">300</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">300</span> The quick brown fox jumps over the lazy dog. 
         </div>
         <div class="sfs-system-ui spacer four-hundred">
-            <span class="nu-u-text--secondary-alt">400</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">400</span> The quick brown fox jumps over the lazy dog. 
         </div>
         <div class="sfs-system-ui spacer five-hundred">
-            <span class="nu-u-text--secondary-alt">500</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">500</span> The quick brown fox jumps over the lazy dog. 
         </div>
         <div class="sfs-system-ui spacer six-hundred">
-            <span class="nu-u-text--secondary-alt">600</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">600</span> The quick brown fox jumps over the lazy dog. 
         </div>
         <div class="sfs-system-ui spacer seven-hundred">
-            <span class="nu-u-text--secondary-alt">700</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">700</span> The quick brown fox jumps over the lazy dog. 
         </div>
         <div class="sfs-system-ui spacer eight-hundred">
-            <span class="nu-u-text--secondary-alt">800</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">800</span> The quick brown fox jumps over the lazy dog. 
         </div>
         <div class="sfs-system-ui spacer nine-hundred">
-            <span class="nu-u-text--secondary-alt">900</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">900</span> The quick brown fox jumps over the lazy dog. 
         </div>
     </section>
 
     <section>
-    <h2 class="sfs-transitional seven-hundred">Transitional</h2>
+    <h2>.sfs-transitional</h2>
         <div class="sfs-transitional spacer one-hundred">
-            <span class="nu-u-text--secondary-alt">100</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">100</span> Pack my box with five dozen liquor jugs. 
         </div>
         <div class="sfs-transitional spacer two-hundred">
-            <span class="nu-u-text--secondary-alt">200</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">200</span> Pack my box with five dozen liquor jugs. 
         </div>
         <div class="sfs-transitional spacer three-hundred">
-            <span class="nu-u-text--secondary-alt">300</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">300</span> Pack my box with five dozen liquor jugs. 
         </div>
         <div class="sfs-transitional spacer four-hundred">
-            <span class="nu-u-text--secondary-alt">400</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">400</span> Pack my box with five dozen liquor jugs. 
         </div>
         <div class="sfs-transitional spacer five-hundred">
-            <span class="nu-u-text--secondary-alt">500</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">500</span> Pack my box with five dozen liquor jugs. 
         </div>
         <div class="sfs-transitional spacer six-hundred">
-            <span class="nu-u-text--secondary-alt">600</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">600</span> Pack my box with five dozen liquor jugs. 
         </div>
         <div class="sfs-transitional spacer seven-hundred">
-            <span class="nu-u-text--secondary-alt">700</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">700</span> Pack my box with five dozen liquor jugs. 
         </div>
         <div class="sfs-transitional spacer eight-hundred">
-            <span class="nu-u-text--secondary-alt">800</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">800</span> Pack my box with five dozen liquor jugs. 
         </div>
         <div class="sfs-transitional spacer nine-hundred">
-            <span class="nu-u-text--secondary-alt">900</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">900</span> Pack my box with five dozen liquor jugs. 
         </div>
     </section>
 
     <section>
-    <h2 class="sfs-old-style seven-hundred">Old Style</h2>
+    <h2>.sfs-old-style</h2>
         <div class="sfs-old-style spacer one-hundred">
-            <span class="nu-u-text--secondary-alt">100</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">100</span> Sphinx of black quartz, judge my vow. 
         </div>
         <div class="sfs-old-style spacer two-hundred">
-            <span class="nu-u-text--secondary-alt">200</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">200</span> Sphinx of black quartz, judge my vow. 
         </div>
         <div class="sfs-old-style spacer three-hundred">
-            <span class="nu-u-text--secondary-alt">300</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">300</span> Sphinx of black quartz, judge my vow. 
         </div>
         <div class="sfs-old-style spacer four-hundred">
-            <span class="nu-u-text--secondary-alt">400</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">400</span> Sphinx of black quartz, judge my vow. 
         </div>
         <div class="sfs-old-style spacer five-hundred">
-            <span class="nu-u-text--secondary-alt">500</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">500</span> Sphinx of black quartz, judge my vow. 
         </div>
         <div class="sfs-old-style spacer six-hundred">
-            <span class="nu-u-text--secondary-alt">600</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">600</span> Sphinx of black quartz, judge my vow. 
         </div>
         <div class="sfs-old-style spacer seven-hundred">
-            <span class="nu-u-text--secondary-alt">700</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">700</span> Sphinx of black quartz, judge my vow. 
         </div>
         <div class="sfs-old-style spacer eight-hundred">
-            <span class="nu-u-text--secondary-alt">800</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">800</span> Sphinx of black quartz, judge my vow. 
         </div>
         <div class="sfs-old-style spacer nine-hundred">
-            <span class="nu-u-text--secondary-alt">900</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">900</span> Sphinx of black quartz, judge my vow. 
         </div>
     </section>  
     
     <section>
-    <h2 class="sfs-humanist seven-hundred">Humanist</h2>
+    <h2>.sfs-humanist</h2>
         <div class="sfs-humanist spacer one-hundred">
-            <span class="nu-u-text--secondary-alt">100</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">100</span> How vexingly quick daft zebras jump! 
         </div>
         <div class="sfs-humanist spacer two-hundred">
-            <span class="nu-u-text--secondary-alt">200</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">200</span> How vexingly quick daft zebras jump! 
         </div>
         <div class="sfs-humanist spacer three-hundred">
-            <span class="nu-u-text--secondary-alt">300</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">300</span> How vexingly quick daft zebras jump! 
         </div>
         <div class="sfs-humanist spacer four-hundred">
-            <span class="nu-u-text--secondary-alt">400</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">400</span> How vexingly quick daft zebras jump! 
         </div>
         <div class="sfs-humanist spacer five-hundred">
-            <span class="nu-u-text--secondary-alt">500</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">500</span> How vexingly quick daft zebras jump! 
         </div>
         <div class="sfs-humanist spacer six-hundred">
-            <span class="nu-u-text--secondary-alt">600</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">600</span> How vexingly quick daft zebras jump! 
         </div>
         <div class="sfs-humanist spacer seven-hundred">
-            <span class="nu-u-text--secondary-alt">700</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">700</span> How vexingly quick daft zebras jump! 
         </div>
         <div class="sfs-humanist spacer eight-hundred">
-            <span class="nu-u-text--secondary-alt">800</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">800</span> How vexingly quick daft zebras jump! 
         </div>
         <div class="sfs-humanist spacer nine-hundred">
-            <span class="nu-u-text--secondary-alt">900</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">900</span> How vexingly quick daft zebras jump! 
         </div>
     </section>
     
     <section>
-    <h2 class="sfs-geometric-humanist seven-hundred">Geometric Humanist</h2>
+    <h2>.sfs-geometric-humanist</h2>
         <div class="sfs-geometric-humanist spacer one-hundred">
-            <span class="nu-u-text--secondary-alt">100</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">100</span> The five boxing wizards jump quickly. 
         </div>
         <div class="sfs-geometric-humanist spacer two-hundred">
-            <span class="nu-u-text--secondary-alt">200</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">200</span> The five boxing wizards jump quickly. 
         </div>
         <div class="sfs-geometric-humanist spacer three-hundred">
-            <span class="nu-u-text--secondary-alt">300</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">300</span> The five boxing wizards jump quickly. 
         </div>
         <div class="sfs-geometric-humanist spacer four-hundred">
-            <span class="nu-u-text--secondary-alt">400</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">400</span> The five boxing wizards jump quickly. 
         </div>
         <div class="sfs-geometric-humanist spacer five-hundred">
-            <span class="nu-u-text--secondary-alt">500</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">500</span> The five boxing wizards jump quickly. 
         </div>
         <div class="sfs-geometric-humanist spacer six-hundred">
-            <span class="nu-u-text--secondary-alt">600</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">600</span> The five boxing wizards jump quickly. 
         </div>
         <div class="sfs-geometric-humanist spacer seven-hundred">
-            <span class="nu-u-text--secondary-alt">700</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">700</span> The five boxing wizards jump quickly. 
         </div>
         <div class="sfs-geometric-humanist spacer eight-hundred">
-            <span class="nu-u-text--secondary-alt">800</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">800</span> The five boxing wizards jump quickly. 
         </div>
         <div class="sfs-geometric-humanist spacer nine-hundred">
-            <span class="nu-u-text--secondary-alt">900</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">900</span> The five boxing wizards jump quickly. 
         </div>
     </section>
     
     <section>
-    <h2 class="sfs-classical-humanist seven-hundred">Classical Humanist</h2>
+    <h2>.sfs-classical-humanist</h2>
         <div class="sfs-classical-humanist spacer one-hundred">
-            <span class="nu-u-text--secondary-alt">100</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">100</span> Jackdaws love my big sphinx of quartz. 
         </div>
         <div class="sfs-classical-humanist spacer two-hundred">
-            <span class="nu-u-text--secondary-alt">200</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">200</span> Jackdaws love my big sphinx of quartz. 
         </div>
         <div class="sfs-classical-humanist spacer three-hundred">
-            <span class="nu-u-text--secondary-alt">300</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">300</span> Jackdaws love my big sphinx of quartz. 
         </div>
         <div class="sfs-classical-humanist spacer four-hundred">
-            <span class="nu-u-text--secondary-alt">400</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">400</span> Jackdaws love my big sphinx of quartz. 
         </div>
         <div class="sfs-classical-humanist spacer five-hundred">
-            <span class="nu-u-text--secondary-alt">500</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">500</span> Jackdaws love my big sphinx of quartz. 
         </div>
         <div class="sfs-classical-humanist spacer six-hundred">
-            <span class="nu-u-text--secondary-alt">600</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">600</span> Jackdaws love my big sphinx of quartz. 
         </div>
         <div class="sfs-classical-humanist spacer seven-hundred">
-            <span class="nu-u-text--secondary-alt">700</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">700</span> Jackdaws love my big sphinx of quartz. 
         </div>
         <div class="sfs-classical-humanist spacer eight-hundred">
-            <span class="nu-u-text--secondary-alt">800</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">800</span> Jackdaws love my big sphinx of quartz. 
         </div>
         <div class="sfs-classical-humanist spacer nine-hundred">
-            <span class="nu-u-text--secondary-alt">900</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">900</span> Jackdaws love my big sphinx of quartz. 
         </div>
     </section>
 
     <section>
-    <h2 class="sfs-neo-grotesque seven-hundred">Neo Grotesque</h2>
+    <h2>.sfs-neo-grotesque</h2>
         <div class="sfs-neo-grotesque spacer one-hundred">
-            <span class="nu-u-text--secondary-alt">100</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">100</span> Quick zephyrs blow, vexing daft Jim. 
         </div>
         <div class="sfs-neo-grotesque spacer two-hundred">
-            <span class="nu-u-text--secondary-alt">200</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">200</span> Quick zephyrs blow, vexing daft Jim. 
         </div>
         <div class="sfs-neo-grotesque spacer three-hundred">
-            <span class="nu-u-text--secondary-alt">300</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">300</span> Quick zephyrs blow, vexing daft Jim. 
         </div>
         <div class="sfs-neo-grotesque spacer four-hundred">
-            <span class="nu-u-text--secondary-alt">400</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">400</span> Quick zephyrs blow, vexing daft Jim. 
         </div>
         <div class="sfs-neo-grotesque spacer five-hundred">
-            <span class="nu-u-text--secondary-alt">500</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">500</span> Quick zephyrs blow, vexing daft Jim. 
         </div>
         <div class="sfs-neo-grotesque spacer six-hundred">
-            <span class="nu-u-text--secondary-alt">600</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">600</span> Quick zephyrs blow, vexing daft Jim. 
         </div>
         <div class="sfs-neo-grotesque spacer seven-hundred">
-            <span class="nu-u-text--secondary-alt">700</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">700</span> Quick zephyrs blow, vexing daft Jim. 
         </div>
         <div class="sfs-neo-grotesque spacer eight-hundred">
-            <span class="nu-u-text--secondary-alt">800</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">800</span> Quick zephyrs blow, vexing daft Jim. 
         </div>
         <div class="sfs-neo-grotesque spacer nine-hundred">
-            <span class="nu-u-text--secondary-alt">900</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">900</span> Quick zephyrs blow, vexing daft Jim. 
         </div>
     </section>
 
     <section>
-    <h2 class="sfs-monospace-slab-serif seven-hundred">Monospace Slab Serif</h2>
+    <h2>.sfs-monospace-slab-serif</h2>
         <div class="sfs-monospace-slab-serif spacer one-hundred">
-            <span class="nu-u-text--secondary-alt">100</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">100</span> Two driven jocks help fax my big quiz. 
         </div>
         <div class="sfs-monospace-slab-serif spacer two-hundred">
-            <span class="nu-u-text--secondary-alt">200</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">200</span> Two driven jocks help fax my big quiz. 
         </div>
         <div class="sfs-monospace-slab-serif spacer three-hundred">
-            <span class="nu-u-text--secondary-alt">300</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">300</span> Two driven jocks help fax my big quiz. 
         </div>
         <div class="sfs-monospace-slab-serif spacer four-hundred">
-            <span class="nu-u-text--secondary-alt">400</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">400</span> Two driven jocks help fax my big quiz. 
         </div>
         <div class="sfs-monospace-slab-serif spacer five-hundred">
-            <span class="nu-u-text--secondary-alt">500</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">500</span> Two driven jocks help fax my big quiz. 
         </div>
         <div class="sfs-monospace-slab-serif spacer six-hundred">
-            <span class="nu-u-text--secondary-alt">600</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">600</span> Two driven jocks help fax my big quiz. 
         </div>
         <div class="sfs-monospace-slab-serif spacer seven-hundred">
-            <span class="nu-u-text--secondary-alt">700</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">700</span> Two driven jocks help fax my big quiz. 
         </div>
         <div class="sfs-monospace-slab-serif spacer eight-hundred">
-            <span class="nu-u-text--secondary-alt">800</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">800</span> Two driven jocks help fax my big quiz. 
         </div>
         <div class="sfs-monospace-slab-serif spacer nine-hundred">
-            <span class="nu-u-text--secondary-alt">900</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">900</span> Two driven jocks help fax my big quiz. 
         </div>
     </section>
 
     <section>
-    <h2 class="sfs-monospace-code seven-hundred">Monospace Code</h2>
+    <h2>.sfs-monospace-code</h2>
         <div class="sfs-monospace-code spacer one-hundred">
-            <span class="nu-u-text--secondary-alt">100</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">100</span> Waltz, nymph, for quick jigs vex Bud. 
         </div>
         <div class="sfs-monospace-code spacer two-hundred">
-            <span class="nu-u-text--secondary-alt">200</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">200</span> Waltz, nymph, for quick jigs vex Bud. 
         </div>
         <div class="sfs-monospace-code spacer three-hundred">
-            <span class="nu-u-text--secondary-alt">300</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">300</span> Waltz, nymph, for quick jigs vex Bud. 
         </div>
         <div class="sfs-monospace-code spacer four-hundred">
-            <span class="nu-u-text--secondary-alt">400</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">400</span> Waltz, nymph, for quick jigs vex Bud. 
         </div>
         <div class="sfs-monospace-code spacer five-hundred">
-            <span class="nu-u-text--secondary-alt">500</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">500</span> Waltz, nymph, for quick jigs vex Bud. 
         </div>
         <div class="sfs-monospace-code spacer six-hundred">
-            <span class="nu-u-text--secondary-alt">600</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">600</span> Waltz, nymph, for quick jigs vex Bud. 
         </div>
         <div class="sfs-monospace-code spacer seven-hundred">
-            <span class="nu-u-text--secondary-alt">700</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">700</span> Waltz, nymph, for quick jigs vex Bud. 
         </div>
         <div class="sfs-monospace-code spacer eight-hundred">
-            <span class="nu-u-text--secondary-alt">800</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">800</span> Waltz, nymph, for quick jigs vex Bud. 
         </div>
         <div class="sfs-monospace-code spacer nine-hundred">
-            <span class="nu-u-text--secondary-alt">900</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">900</span> Waltz, nymph, for quick jigs vex Bud. 
         </div>
     </section>
 
     <section>
-    <h2 class="sfs-industrial seven-hundred">Industrial</h2>
+    <h2>.sfs-industrial</h2>
         <div class="sfs-industrial spacer one-hundred">
-            <span class="nu-u-text--secondary-alt">100</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">100</span> Glib jocks quiz nymph to vex dwarf. 
         </div>
         <div class="sfs-industrial spacer two-hundred">
-            <span class="nu-u-text--secondary-alt">200</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">200</span> Glib jocks quiz nymph to vex dwarf. 
         </div>
         <div class="sfs-industrial spacer three-hundred">
-            <span class="nu-u-text--secondary-alt">300</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">300</span> Glib jocks quiz nymph to vex dwarf. 
         </div>
         <div class="sfs-industrial spacer four-hundred">
-            <span class="nu-u-text--secondary-alt">400</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">400</span> Glib jocks quiz nymph to vex dwarf. 
         </div>
         <div class="sfs-industrial spacer five-hundred">
-            <span class="nu-u-text--secondary-alt">500</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">500</span> Glib jocks quiz nymph to vex dwarf. 
         </div>
         <div class="sfs-industrial spacer six-hundred">
-            <span class="nu-u-text--secondary-alt">600</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">600</span> Glib jocks quiz nymph to vex dwarf. 
         </div>
         <div class="sfs-industrial spacer seven-hundred">
-            <span class="nu-u-text--secondary-alt">700</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">700</span> Glib jocks quiz nymph to vex dwarf. 
         </div>
         <div class="sfs-industrial spacer eight-hundred">
-            <span class="nu-u-text--secondary-alt">800</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">800</span> Glib jocks quiz nymph to vex dwarf. 
         </div>
         <div class="sfs-industrial spacer nine-hundred">
-            <span class="nu-u-text--secondary-alt">900</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">900</span> Glib jocks quiz nymph to vex dwarf. 
         </div>
     </section>
 
     <section>
-    <h2 class="sfs-rounded-sans seven-hundred">Rounded Sans</h2>
+    <h2>.sfs-rounded-sans</h2>
         <div class="sfs-rounded-sans spacer one-hundred">
-            <span class="nu-u-text--secondary-alt">100</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">100</span> Sympathizing would fix Quaker objectives. 
         </div>
         <div class="sfs-rounded-sans spacer two-hundred">
-            <span class="nu-u-text--secondary-alt">200</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">200</span> Sympathizing would fix Quaker objectives. 
         </div>
         <div class="sfs-rounded-sans spacer three-hundred">
-            <span class="nu-u-text--secondary-alt">300</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">300</span> Sympathizing would fix Quaker objectives. 
         </div>
         <div class="sfs-rounded-sans spacer four-hundred">
-            <span class="nu-u-text--secondary-alt">400</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">400</span> Sympathizing would fix Quaker objectives. 
         </div>
         <div class="sfs-rounded-sans spacer five-hundred">
-            <span class="nu-u-text--secondary-alt">500</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">500</span> Sympathizing would fix Quaker objectives. 
         </div>
         <div class="sfs-rounded-sans spacer six-hundred">
-            <span class="nu-u-text--secondary-alt">600</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">600</span> Sympathizing would fix Quaker objectives. 
         </div>
         <div class="sfs-rounded-sans spacer seven-hundred">
-            <span class="nu-u-text--secondary-alt">700</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">700</span> Sympathizing would fix Quaker objectives. 
         </div>
         <div class="sfs-rounded-sans spacer eight-hundred">
-            <span class="nu-u-text--secondary-alt">800</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">800</span> Sympathizing would fix Quaker objectives. 
         </div>
         <div class="sfs-rounded-sans spacer nine-hundred">
-            <span class="nu-u-text--secondary-alt">900</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">900</span> Sympathizing would fix Quaker objectives. 
         </div>
     </section>
 
     <section>
-    <h2 class="sfs-slab-serif seven-hundred">Slab Serif</h2>
+    <h2>.sfs-slab-serif</h2>
         <div class="sfs-slab-serif spacer one-hundred">
-            <span class="nu-u-text--secondary-alt">100</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">100</span> A wizard's job is to vex chumps quickly in fog. 
         </div>
         <div class="sfs-slab-serif spacer two-hundred">
-            <span class="nu-u-text--secondary-alt">200</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">200</span> A wizard's job is to vex chumps quickly in fog. 
         </div>
         <div class="sfs-slab-serif spacer three-hundred">
-            <span class="nu-u-text--secondary-alt">300</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">300</span> A wizard's job is to vex chumps quickly in fog. 
         </div>
         <div class="sfs-slab-serif spacer four-hundred">
-            <span class="nu-u-text--secondary-alt">400</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">400</span> A wizard's job is to vex chumps quickly in fog. 
         </div>
         <div class="sfs-slab-serif spacer five-hundred">
-            <span class="nu-u-text--secondary-alt">500</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">500</span> A wizard's job is to vex chumps quickly in fog. 
         </div>
         <div class="sfs-slab-serif spacer six-hundred">
-            <span class="nu-u-text--secondary-alt">600</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">600</span> A wizard's job is to vex chumps quickly in fog. 
         </div>
         <div class="sfs-slab-serif spacer seven-hundred">
-            <span class="nu-u-text--secondary-alt">700</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">700</span> A wizard's job is to vex chumps quickly in fog. 
         </div>
         <div class="sfs-slab-serif spacer eight-hundred">
-            <span class="nu-u-text--secondary-alt">800</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">800</span> A wizard's job is to vex chumps quickly in fog. 
         </div>
         <div class="sfs-slab-serif spacer nine-hundred">
-            <span class="nu-u-text--secondary-alt">900</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">900</span> A wizard's job is to vex chumps quickly in fog. 
         </div>
     </section>
 
     <section>
-    <h2 class="sfs-antique seven-hundred">Antique</h2>
+    <h2>.sfs-antique</h2>
         <div class="sfs-antique spacer one-hundred">
-            <span class="nu-u-text--secondary-alt">100</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">100</span> Watch 'Jeopardy!', Alex Trebek's fun TV quiz game. 
         </div>
         <div class="sfs-antique spacer two-hundred">
-            <span class="nu-u-text--secondary-alt">200</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">200</span> Watch 'Jeopardy!', Alex Trebek's fun TV quiz game. 
         </div>
         <div class="sfs-antique spacer three-hundred">
-            <span class="nu-u-text--secondary-alt">300</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">300</span> Watch 'Jeopardy!', Alex Trebek's fun TV quiz game. 
         </div>
         <div class="sfs-antique spacer four-hundred">
-            <span class="nu-u-text--secondary-alt">400</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">400</span> Watch 'Jeopardy!', Alex Trebek's fun TV quiz game. 
         </div>
         <div class="sfs-antique spacer five-hundred">
-            <span class="nu-u-text--secondary-alt">500</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">500</span> Watch 'Jeopardy!', Alex Trebek's fun TV quiz game. 
         </div>
         <div class="sfs-antique spacer six-hundred">
-            <span class="nu-u-text--secondary-alt">600</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">600</span> Watch 'Jeopardy!', Alex Trebek's fun TV quiz game. 
         </div>
         <div class="sfs-antique spacer seven-hundred">
-            <span class="nu-u-text--secondary-alt">700</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">700</span> Watch 'Jeopardy!', Alex Trebek's fun TV quiz game. 
         </div>
         <div class="sfs-antique spacer eight-hundred">
-            <span class="nu-u-text--secondary-alt">800</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">800</span> Watch 'Jeopardy!', Alex Trebek's fun TV quiz game. 
         </div>
         <div class="sfs-antique spacer nine-hundred">
-            <span class="nu-u-text--secondary-alt">900</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">900</span> Watch 'Jeopardy!', Alex Trebek's fun TV quiz game. 
         </div>
     </section>
 
     <section>
-    <h2 class="sfs-didone seven-hundred">Didone</h2>
+    <h2>.sfs-didone</h2>
         <div class="sfs-didone spacer one-hundred">
-            <span class="nu-u-text--secondary-alt">100</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">100</span> Fake bugs put in wax jonquils drive him crazy. 
         </div>
         <div class="sfs-didone spacer two-hundred">
-            <span class="nu-u-text--secondary-alt">200</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">200</span> Fake bugs put in wax jonquils drive him crazy. 
         </div>
         <div class="sfs-didone spacer three-hundred">
-            <span class="nu-u-text--secondary-alt">300</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">300</span> Fake bugs put in wax jonquils drive him crazy. 
         </div>
         <div class="sfs-didone spacer four-hundred">
-            <span class="nu-u-text--secondary-alt">400</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">400</span> Fake bugs put in wax jonquils drive him crazy. 
         </div>
         <div class="sfs-didone spacer five-hundred">
-            <span class="nu-u-text--secondary-alt">500</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">500</span> Fake bugs put in wax jonquils drive him crazy. 
         </div>
         <div class="sfs-didone spacer six-hundred">
-            <span class="nu-u-text--secondary-alt">600</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">600</span> Fake bugs put in wax jonquils drive him crazy. 
         </div>
         <div class="sfs-didone spacer seven-hundred">
-            <span class="nu-u-text--secondary-alt">700</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">700</span> Fake bugs put in wax jonquils drive him crazy. 
         </div>
         <div class="sfs-didone spacer eight-hundred">
-            <span class="nu-u-text--secondary-alt">800</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">800</span> Fake bugs put in wax jonquils drive him crazy. 
         </div>
         <div class="sfs-didone spacer nine-hundred">
-            <span class="nu-u-text--secondary-alt">900</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">900</span> Fake bugs put in wax jonquils drive him crazy. 
         </div>
     </section>
 
     <section>
-    <h2 class="sfs-handwritten seven-hundred">Handwritten</h2>
+    <h2>.sfs-handwritten</h2>
         <div class="sfs-handwritten spacer one-hundred">
-            <span class="nu-u-text--secondary-alt">100</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">100</span> The jay, pig, fox, zebra and my wolves quack! 
         </div>
         <div class="sfs-handwritten spacer two-hundred">
-            <span class="nu-u-text--secondary-alt">200</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">200</span> The jay, pig, fox, zebra and my wolves quack! 
         </div>
         <div class="sfs-handwritten spacer three-hundred">
-            <span class="nu-u-text--secondary-alt">300</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">300</span> The jay, pig, fox, zebra and my wolves quack! 
         </div>
         <div class="sfs-handwritten spacer four-hundred">
-            <span class="nu-u-text--secondary-alt">400</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">400</span> The jay, pig, fox, zebra and my wolves quack! 
         </div>
         <div class="sfs-handwritten spacer five-hundred">
-            <span class="nu-u-text--secondary-alt">500</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">500</span> The jay, pig, fox, zebra and my wolves quack! 
         </div>
         <div class="sfs-handwritten spacer six-hundred">
-            <span class="nu-u-text--secondary-alt">600</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">600</span> The jay, pig, fox, zebra and my wolves quack! 
         </div>
         <div class="sfs-handwritten spacer seven-hundred">
-            <span class="nu-u-text--secondary-alt">700</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">700</span> The jay, pig, fox, zebra and my wolves quack! 
         </div>
         <div class="sfs-handwritten spacer eight-hundred">
-            <span class="nu-u-text--secondary-alt">800</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">800</span> The jay, pig, fox, zebra and my wolves quack! 
         </div>
         <div class="sfs-handwritten spacer nine-hundred">
-            <span class="nu-u-text--secondary-alt">900</span> The quick brown fox jumps over the lazy dog 
+            <span class="nu-u-text--secondary-alt">900</span> The jay, pig, fox, zebra and my wolves quack! 
         </div>
     </section>
 </main>
