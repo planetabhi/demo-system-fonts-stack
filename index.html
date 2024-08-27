@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>System Fonts Stack</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <style>
         @import "@new-ui/reset";
         @import "@new-ui/spacings";
@@ -26,10 +29,14 @@
             margin: 0 auto;
             padding: 3rem;
         }
+        section {margin-bottom: var(--spacing-08);}
         h1 { font-size: 24px; margin-bottom: var(--spacing-03); }
-        h2 { font-family: var(--monospace-code); font-size: 18px; margin-top: 30px; margin-bottom: 10px; font-weight: 400; }
-        ol {padding: var(--spacing-00);}
-        code { font-family: var(--monospace-code); color: var(--pink5);}
+        h2 { font-family: var(--monospace-code); font-size: 18px; margin-bottom: var(--spacing-04); font-weight: 400; }
+        p {color: var(--text-secondary);}
+        dl { display: grid; grid-gap: 4px 16px; grid-template-columns: max-content;}
+        dt { font-weight: 600;}
+        dd { margin: 0; grid-column-start: 2;}
+        code { font-family: var(--monospace-code); color: var(--pink5); font-size: 1rem; line-height: 1;}
         .spacer { margin-bottom: var(--spacing-03); }
         .weight { color: var(--text-secondary-alt); font-size: 14px; }
         .one-hundred {font-weight: 100;}
@@ -45,12 +52,20 @@
 </head>
 <body>
 <main>
+    <section>
     <h1>System Fonts Stack</h1>
     <p>Lightning-fast fonts. No downloads, no delays.</p>
-    <ol>
-    <li><code>npm i -D system-fonts-stack</code></li>
-    <li><code>@import "system-fonts-stack";</code></li>
-    </ol>
+    </section>
+
+    <section>
+    <dl>
+        <dt>Installation:</dt>
+        <dd><code>npm i -D system-fonts-stack</code></dd>
+
+        <dt>SCSS/CSS:</dt>
+        <dd><code>@import "system-fonts-stack";</code></dd>
+    </dl>
+    </section>
 
     <section>
     <h2>.sfs-system-ui</h2>
